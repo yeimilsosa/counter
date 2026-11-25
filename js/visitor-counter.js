@@ -26,7 +26,7 @@ async function initVisitorCounter() {
   // Consultar el total público del sitio para mostrarlo en el pie de página.
   try {
     const response = await fetch(
-      `${GOATCOUNTER_SITE}/counter/${encodeURIComponent("/")}.json`,
+      `${GOATCOUNTER_SITE}/counter/${"TOTAL"}.json`,
       {
         headers: { Accept: "application/json" },
         cache: "no-store"
